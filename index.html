@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Astrus OS</title>
+ <link rel="stylesheet" href="ast.css">
+ <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+ <img src="/ilumware.png" id="marplaca">
+  <div id="top">
+   <img src="/astrus.png" id="logo">
+   <div id="boot_bar">
+    <div id="boot_progress"></div>
+   </div>
+  </div>
+ <div id="login_found">
+  <div id="login">
+   <input id="userPC" type="text" placeholder=" digite o nome do seu Computador">
+   <input id="user" type="text" placeholder=" digite o nome do usuário">
+   <input id="pass" type="password" placeholder=" digite a senha">
+
+   <button id="loginbtn" onclick="login_start()">Criar Conta</button>
+  </div>
+ </div>
+
+ <div id="one"></div>
+ <div id="two"></div>
+ <div id="thr"></div>
+ <div id="four"></div>
+ <div id="five"></div>
+ <div id="six"></div>
+ <div id="barra">
+  <img src="/astrus2.png" id="bar_img" onclick="abr_menu()"></img>
+  <p id="relogio" onclick="abr_MenuRe()"></p>
+  <div id="MenuRe"></div>
+ </div>
+
+ <div id="menu">
+  <button id="config" onclick="abrirConfig()"></button>
+ </div>
+  <div id="cen"></div>
+  <div id="login_sys">
+   <img src="/A2.png" id="A">
+   <img src="/enter.png" id="enter_sys" onclick="enter_sys()">
+   <h1 id="user_sys"></h1>
+   <input id="pass_sys" type="password" placeholder="digite sua senha" onkeypress="if(event.key==='Enter'){enter_sys()}">
+  </div>
+
+  <div id="janelaConfig" class="janela">
+   <div class="topo">
+    Configurações
+    <button id="maxmiConfig" onclick="maxConfig()">+</button>
+    <button id="fecharConfig" onclick="fecharConfig()">X</button>
+   </div>
+   <button class="sistema" onclick="abrirsis()">Sistema</button>
+   <button class="personalizar" onclick="abrirper()">Personalizar</button>
+   <button class="seguranca" onclick="abrirseg()">Segurança</button>
+   <button class="sobre" onclick="abrirso()">Sobre</button>
+   <button class="mais" onclick="abrirma()">Mais</button>
+   <button class="conta" onclick="abrirCon()">Conta</button>
+
+    <img src="/wall.png" id="wall" onclick="sewall1()">
+    <img src="/wall2.png" id="wall2" onclick="sewall2()">
+    
+  </div>
+ 
+ <script src="ast.js"></script>
+</body>
+</html>
